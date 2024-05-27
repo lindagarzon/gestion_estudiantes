@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Estudiante</title>
+    <!-- Integramos Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Crear Estudiante</h1>
+        <form action="procesar_creacion_estudiante.php" method="POST">
+            <div class="form-group">
+                <label for="nombres">Nombres:</label>
+                <input type="text" class="form-control" id="nombres" name="nombres" placeholder="Ingrese nombres">
+            </div>
+            <div class="form-group">
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" class="form-control" id="apellidos" name="apellidos" placeholder="Ingrese apellidos">
+            </div>
+            <div class="form-group">
+                <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                <input type="date" class="form-control" id="fecha_nacimiento" name="fecha_nacimiento">
+            </div>
+            <div class="form-group">
+                <label for="grado">Grado:</label>
+                <input type="text" class="form-control" id="grado" name="grado" placeholder="Ingrese grado">
+            </div>
+            <div class="form-group">
+                <label for="informacion_padres">Información de los Padres:</label>
+                <textarea class="form-control" id="informacion_padres" name="informacion_padres" rows="3" placeholder="Ingrese información de los padres"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="tipo_sangre">Tipo de Sangre:</label>
+                <select class="form-control" id="tipo_sangre" name="tipo_sangre">
+                    <option value="">Seleccione tipo de sangre</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="observaciones">Observaciones:</label>
+                <textarea class="form-control" id="observaciones" name="observaciones" rows="3" placeholder="Ingrese observaciones"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="materias">Materias a matricular:</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="algebra" id="algebra" name="materias[]">
+                    <label class="form-check-label" for="algebra">Álgebra</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="matematicas" id="matematicas" name="materias[]">
+                    <label class="form-check-label" for="matematicas">Matemáticas</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="fisica" id="fisica" name="materias[]">
+                    <label class="form-check-label" for="fisica">Física</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="biologia" id="biologia" name="materias[]">
+                    <label class="form-check-label" for="biologia">Biología</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="quimica" id="quimica" name="materias[]">
+                    <label class="form-check-label" for="quimica">Química</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="ingles" id="ingles" name="materias[]">
+                    <label class="form-check-label" for="ingles">Inglés</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="frances" id="frances" name="materias[]">
+                    <label class="form-check-label" for="frances">Francés</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="chino" id="chino" name="materias[]">
+                    <label class="form-check-label" for="chino">Chino</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="espanol" id="espanol" name="materias[]">
+                    <label class="form-check-label" for="espanol">Español</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="literatura" id="literatura" name="materias[]">
+                    <label class="form-check-label" for="literatura">Literatura</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="arte" id="arte" name="materias[]">
+                    <label class="form-check-label" for="arte">Arte</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="filosofia" id="filosofia" name="materias[]">
+                    <label class="form-check-label" for="filosofia">Filosofía</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="teatro" id="teatro" name="materias[]">
+                    <label class="form-check-label" for="teatro">Teatro</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="informatica" id="informatica" name="materias[]">
+                    <label class="form-check-label" for="informatica">Informática</label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Crear Estudiante</button>
+        </form>
+    </div>
+
+    <!-- Inte

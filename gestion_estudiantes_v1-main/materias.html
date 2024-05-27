@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Materias</title>
+    <!-- Integramos Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Gestión de Materias</h1>
+        <div class="row mt-5">
+            <div class="col-md-3">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active">Opciones</a>
+                    <a href="crear_materia.html" class="list-group-item list-group-item-action">Crear Materia</a>
+                    <a href="consultar_materias.html" class="list-group-item list-group-item-action">Consultar Materias</a>
+                    <a href="editar_materia.html" class="list-group-item list-group-item-action">Editar Materia</a>
+                    <a href="eliminar_materia.html" class="list-group-item list-group-item-action">Eliminar Materia</a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <h2>Listado de Materias</h2>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Nombre de la Materia</th>
+                            <th>Horario</th>
+                            <th>Profesor Asignado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Aquí irán las filas de materias -->
+                        <!-- Ejemplo de fila estática -->
+                        <tr>
+                            <td>Álgebra</td>
+                            <td>Lunes y Miércoles 10:00 - 11:30</td>
+                            <td>Juan Pérez</td>
+                        </tr>
+                        <tr>
+                            <td>Matemáticas</td>
+                            <td>Martes y Jueves 09:00 - 10:30</td>
+                            <td>María López</td>
+                        </tr>
+                        <tr>
+                            <td>Física</td>
+                            <td>Lunes y Miércoles 13:00 - 14:30</td>
+                            <td>Carlos García</td>
+                        </tr>
+                        <tr>
+                            <td>Biología</td>
+                            <td>Viernes 10:00 - 12:00</td>
+                            <td>Laura Martínez</td>
+                        </tr>
+                        <!-- Agrega más filas según sea necesario -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Integramos Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrap.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

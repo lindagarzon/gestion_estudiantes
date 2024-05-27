@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Materia</title>
+    <!-- Integramos Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Editar Materia</h1>
+        <form action="procesar_editar_materia.php" method="POST">
+            <div class="form-group">
+                <label for="id_materia">ID de la Materia:</label>
+                <input type="text" class="form-control" id="id_materia" name="id_materia" placeholder="Ingrese ID de la materia" required>
+            </div>
+            <div class="form-group">
+                <label for="nombre_materia">Nombre de la Materia:</label>
+                <input type="text" class="form-control" id="nombre_materia" name="nombre_materia" placeholder="Ingrese nombre de la materia" required>
+            </div>
+            <div class="form-group">
+                <label for="horario">Horario:</label>
+                <input type="text" class="form-control" id="horario" name="horario" placeholder="Ingrese horario" required>
+            </div>
+            <div class="form-group">
+                <label for="profesor_asignado">Profesor Asignado:</label>
+                <input type="text" class="form-control" id="profesor_asignado" name="profesor_asignado" placeholder="Ingrese nombre del profesor asignado" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+        </form>
+    </div>
+
+    <!-- Integramos Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
