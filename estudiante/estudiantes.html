@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestión de Estudiantes</title>
     <!-- Integramos Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
     <div class="container">
@@ -14,21 +14,23 @@
             <div class="col-md-3">
                 <div class="list-group">
                     <a href="#" class="list-group-item list-group-item-action active">Opciones</a>
-                    <a href="crear_estudiante.html" class="list-group-item list-group-item-action">Crear Estudiante</a>
-                    <a href="consultar_estudiantes.html" class="list-group-item list-group-item-action">Consultar Estudiantes</a>
-                    <a href="editar_estudiante.html" class="list-group-item list-group-item-action">Editar Estudiante</a>
-                    <a href="eliminar_estudiante.html" class="list-group-item list-group-item-action">Eliminar Estudiante</a>
+                    <a href="#" class="list-group-item list-group-item-action" id="crearEstudiante">Crear Estudiante</a>
+                    <a href="#" class="list-group-item list-group-item-action" id="consultarEstudiantes">Consultar Estudiantes</a>
+                    <a href="#" class="list-group-item list-group-item-action" id="editarEstudiante">Editar Estudiante</a>
+                    <a href="#" class="list-group-item list-group-item-action" id="eliminarEstudiante">Eliminar Estudiante</a>
                 </div>
             </div>
-            <div class="col-md-9">
+            <div class="col-md-9" id="contenedorPrincipal">
                 <h2>Seleccione una opción del menú para gestionar estudiantes</h2>
             </div>
         </div>
     </div>
 
     <!-- Integramos Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrap.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="http://stackpath.bootstrap.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- JavaScript Personalizado -->
+    <script src="../js/gestionestudiante.js"></script>
 </body>
 </html>
